@@ -1,0 +1,101 @@
+🎨 Hero Section:
+Create an animated, parallax landing experience with smooth, cinematic transitions and minimalistic, clean graphic design.
+
+The hero section should feature:
+
+My circular profile image
+
+My name (Kisan Rai)
+
+My title (Full-Stack Software Developer)
+
+A brief animated tagline
+
+Use layered parallax movement for the background, text, and image to give depth and motion.
+
+Integrate fluid typography animations with modern, cinematic fonts like Satoshi, Space Grotesk, or Poppins.
+
+🖥️ About Me Section:
+The current plain text layout is too static — transform it into a visually appealing, interactive section.
+
+Add:
+
+Vector icons and illustrations that reflect my personality and skills
+
+Interactive, animated elements for a more engaging user experience
+
+Optionally, incorporate a Bento grid-style layout (Bento Box) for neatly organized, fun, clickable info blocks.
+
+Keep the design clean, modern, and minimalistic with subtle animations.
+
+💼 Experience Section:
+Redesign this section with dynamic visual storytelling:
+
+Replace plain text with animated cards, timelines, or interactive visual panels
+
+Use icons, logos, and simple illustrations to represent each job role
+
+Consider adding Three.js-powered 3D visual effects or interactive panels to make the section engaging and memorable.
+
+📁 Projects Section:
+For each project, include:
+
+A dummy image or placeholder graphic
+
+Animated hover effects on each project card
+
+Project title, brief description, and a GitHub link icon
+
+Layout should be responsive, clean, and visually engaging, with consistent spacing and alignment.
+
+🛠️ Skills Section:
+Use appropriate, accurate vector icons for every listed technical skill.
+
+Avoid generic or misrepresented icons — carefully match icons to:
+
+Languages (Python, Java, JavaScript, C#, HTML, CSS)
+
+Frameworks (Django, Flask, Spring Boot)
+
+Databases (MongoDB, MySQL, PostgreSQL)
+
+Tools (Docker, GitHub, AWS, Firebase)
+
+Animate icons on hover for a polished, modern look.
+
+hatbot Section:
+Integrate a simple, lightweight chatbot widget styled to match the site’s minimalist, clean aesthetic.
+
+The chatbot will feature predefined, hardcoded answers to common questions — no AI or dynamic backend needed.
+
+Capabilities should include:
+
+Responding with hardcoded answers such as:
+
+“What’s your name?” → "My name is Kisan Rai."
+
+“What’s your email?” → "You can reach me at [kisanrai939@gmail.com]."
+
+“What’s your phone number?” → "437-661-0038"
+
+“Where can I find your LinkedIn?” → https://www.linkedin.com/in/kisanrai/
+
+“Where’s your GitHub?” → https://github.com/Kisan303
+"For resume": https://github.com/Kisan303/Kisan-Portfolio/blob/main/Portfolio/Resources/Resume.pdf
+
+Basic conversational responses like:
+
+“Tell me about yourself.” → "I’m Kisan Rai, a passionate Full-Stack Software Developer creating seamless user experiences and solving real-world problems through technology."
+
+“Where can I see your projects?” → "Check them out on my GitHub!"
+
+The chatbot should:
+
+Appear on every page as a small, accessible floating button or icon.
+
+Use smooth fade-in and pop-up animations when opened.
+
+Use clear, legible fonts and icons that match the overall typography and iconography of the portfolio.
+
+📖 README + Run Instructions
+Provide a clear README file with setup instructions for anyone who wants to run this project outside of Replit.
