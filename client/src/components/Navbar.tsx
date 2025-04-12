@@ -36,25 +36,25 @@ const Navbar = () => {
         </a>
         
         <div className="hidden md:flex gap-8">
-          <a href="#about" className="nav-link text-secondary hover:text-white transition-colors relative">
+          <a href="#about" className="nav-link text-gray-300 hover:text-white transition-colors relative">
             About
-            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-accent-blue transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-[#1FB6FF] transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#experience" className="nav-link text-secondary hover:text-white transition-colors relative">
+          <a href="#experience" className="nav-link text-gray-300 hover:text-white transition-colors relative">
             Experience
-            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-accent-blue transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-[#1FB6FF] transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#projects" className="nav-link text-secondary hover:text-white transition-colors relative">
+          <a href="#projects" className="nav-link text-gray-300 hover:text-white transition-colors relative">
             Projects
-            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-accent-blue transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-[#1FB6FF] transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#skills" className="nav-link text-secondary hover:text-white transition-colors relative">
+          <a href="#skills" className="nav-link text-gray-300 hover:text-white transition-colors relative">
             Skills
-            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-accent-blue transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-[#1FB6FF] transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#contact" className="nav-link text-secondary hover:text-white transition-colors relative">
+          <a href="#contact" className="nav-link text-gray-300 hover:text-white transition-colors relative">
             Contact
-            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-accent-blue transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-[-4px] w-0 h-[2px] bg-[#1FB6FF] transition-all duration-300 group-hover:w-full"></span>
           </a>
         </div>
         
@@ -79,35 +79,35 @@ const Navbar = () => {
         <div className="flex flex-col items-center gap-8 text-2xl">
           <a 
             href="#about" 
-            className="nav-link text-secondary hover:text-white transition-colors"
+            className="nav-link text-gray-300 hover:text-white transition-colors"
             onClick={handleLinkClick}
           >
             About
           </a>
           <a 
             href="#experience" 
-            className="nav-link text-secondary hover:text-white transition-colors"
+            className="nav-link text-gray-300 hover:text-white transition-colors"
             onClick={handleLinkClick}
           >
             Experience
           </a>
           <a 
             href="#projects" 
-            className="nav-link text-secondary hover:text-white transition-colors"
+            className="nav-link text-gray-300 hover:text-white transition-colors"
             onClick={handleLinkClick}
           >
             Projects
           </a>
           <a 
             href="#skills" 
-            className="nav-link text-secondary hover:text-white transition-colors"
+            className="nav-link text-gray-300 hover:text-white transition-colors"
             onClick={handleLinkClick}
           >
             Skills
           </a>
           <a 
             href="#contact" 
-            className="nav-link text-secondary hover:text-white transition-colors"
+            className="nav-link text-gray-300 hover:text-white transition-colors"
             onClick={handleLinkClick}
           >
             Contact
