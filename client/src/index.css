@@ -41,7 +41,7 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-accent-blue to-accent-orange bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[#1FB6FF] to-[#FF7E36] bg-clip-text text-transparent;
   }
 
   .profile-animation {

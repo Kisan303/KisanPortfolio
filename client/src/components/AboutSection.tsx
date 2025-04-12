@@ -6,7 +6,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 relative">
-            <span className="bg-accent-blue w-12 h-1 absolute -top-3 left-0 rounded"></span>
+            <span className="bg-[#1FB6FF] w-12 h-1 absolute -top-3 left-0 rounded"></span>
             About Me
           </h2>
           

@@ -77,13 +77,13 @@ const HeroSection = () => {
             >
               <a 
                 href="#projects" 
-                className="px-6 py-3 bg-accent-blue text-white font-medium rounded-md hover:bg-opacity-90 transition-colors"
+                className="px-6 py-3 bg-[#1FB6FF] text-white font-medium rounded-md hover:bg-opacity-90 transition-colors"
               >
                 View Projects
               </a>
               <a 
                 href="#contact" 
-                className="px-6 py-3 border border-slate-600 text-white font-medium rounded-md hover:border-accent-blue transition-colors"
+                className="px-6 py-3 border border-slate-600 text-white font-medium rounded-md hover:border-[#1FB6FF] transition-colors"
               >
                 Contact Me
               </a>
@@ -116,7 +116,7 @@ const HeroSection = () => {
       
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
-        <a href="#about" className="text-tertiary hover:text-white transition-colors">
+        <a href="#about" className="text-gray-400 hover:text-white transition-colors">
           <ChevronDown className="w-8 h-8" />
         </a>
       </div>
