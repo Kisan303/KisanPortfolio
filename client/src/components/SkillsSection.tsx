@@ -1,13 +1,15 @@
 import { motion } from 'framer-motion';
 import {
-  Code2, Braces, Database, FileCode, 
-  Server, Globe, Monitor, Component, 
+  Code2, Braces, Database, FileCode,
+  Server, Globe, Monitor, Component,
   Layers, ArrowLeftRight, Workflow, Calendar,
-  Cloud, Container, GitBranch, Hammer, 
-  Flame, Lock, BadgeCheck, Puzzle, 
+  Cloud, Container, GitBranch, Hammer,
+  Flame, Lock, BadgeCheck, Puzzle,
   Cpu, Lightbulb, RefreshCw, Coffee,
-  Grid
+  Grid, Terminal
 } from 'lucide-react';
+
+import { SiDjango, SiMysql, SiPostgresql, SiMongodb, SiReact, SiAngular,  SiGraphql, SiDocker, SiGit,  SiGooglecloud } from 'react-icons/si';
 
 const SkillsSection = () => {
   const iconSize = "w-8 h-8";
@@ -32,11 +34,10 @@ const SkillsSection = () => {
       title: "Frontend Frameworks",
       color: "orange",
       skills: [
-        { name: "React", icon: <Component className={`${iconSize} ${iconOrangeClass}`} /> },
-        { name: "Vue.js", icon: <Layers className={`${iconSize} ${iconOrangeClass}`} /> },
-        { name: "Angular", icon: <Component className={`${iconSize} ${iconOrangeClass}`} /> },
-        { name: "TailwindCSS", icon: <Layers className={`${iconSize} ${iconOrangeClass}`} /> },
-        { name: "Bootstrap", icon: <Component className={`${iconSize} ${iconOrangeClass}`} /> },
+        { name: "React", icon: <SiReact className={`${iconSize} ${iconOrangeClass}`} /> },
+        { name: "Angular", icon: <SiAngular className={`${iconSize} ${iconOrangeClass}`} /> },
+        { name: "TailwindCSS", icon: <Grid className={`${iconSize} ${iconOrangeClass}`} /> },
+        { name: "Bootstrap", icon: <Layers className={`${iconSize} ${iconOrangeClass}`} /> },
         { name: "Figma", icon: <Monitor className={`${iconSize} ${iconOrangeClass}`} /> }
       ]
     },
@@ -44,34 +45,32 @@ const SkillsSection = () => {
       title: "Backend Frameworks",
       color: "blue",
       skills: [
-        { name: "Node.js", icon: <Server className={`${iconSize} ${iconBlueClass}`} /> },
+        { name: "Node.js", icon: <Cpu className={`${iconSize} ${iconBlueClass}`} /> },
         { name: "Express", icon: <Server className={`${iconSize} ${iconBlueClass}`} /> },
-        { name: "Django", icon: <Server className={`${iconSize} ${iconBlueClass}`} /> },
-        { name: "Flask", icon: <Server className={`${iconSize} ${iconBlueClass}`} /> },
-        { name: "Spring Boot", icon: <Server className={`${iconSize} ${iconBlueClass}`} /> },
-        { name: "GraphQL", icon: <ArrowLeftRight className={`${iconSize} ${iconBlueClass}`} /> }
+        { name: "Django", icon: <SiDjango className={`${iconSize} ${iconBlueClass}`} /> },
+        { name: "Flask", icon: <Flame className={`${iconSize} ${iconBlueClass}`} /> },
+        { name: "Spring Boot", icon: <Server className={`${iconSize} ${iconBlueClass}`} /> }
       ]
     },
     {
       title: "Databases",
       color: "orange",
       skills: [
-        { name: "MongoDB", icon: <Database className={`${iconSize} ${iconOrangeClass}`} /> },
-        { name: "MySQL", icon: <Database className={`${iconSize} ${iconOrangeClass}`} /> },
-        { name: "PostgreSQL", icon: <Database className={`${iconSize} ${iconOrangeClass}`} /> },
-        { name: "Firebase", icon: <Flame className={`${iconSize} ${iconOrangeClass}`} /> },
-        { name: "Redis", icon: <Database className={`${iconSize} ${iconOrangeClass}`} /> }
+        { name: "MongoDB", icon: <SiMongodb className={`${iconSize} ${iconOrangeClass}`} /> },
+        { name: "MySQL", icon: <SiMysql className={`${iconSize} ${iconOrangeClass}`} /> },
+        { name: "PostgreSQL", icon: <SiPostgresql className={`${iconSize} ${iconOrangeClass}`} /> },
+        { name: "Firebase", icon: <Flame className={`${iconSize} ${iconOrangeClass}`} /> }
       ]
     },
     {
       title: "DevOps & Tools",
       color: "blue",
       skills: [
-        { name: "Docker", icon: <Container className={`${iconSize} ${iconBlueClass}`} /> },
-        { name: "Git", icon: <GitBranch className={`${iconSize} ${iconBlueClass}`} /> },
-        { name: "GitHub", icon: <GitBranch className={`${iconSize} ${iconBlueClass}`} /> },
-        { name: "AWS", icon: <Cloud className={`${iconSize} ${iconBlueClass}`} /> },
-        { name: "Google Cloud", icon: <Globe className={`${iconSize} ${iconBlueClass}`} /> },
+        { name: "Docker", icon: <SiDocker className={`${iconSize} ${iconBlueClass}`} /> },
+        { name: "Git", icon: <SiGit className={`${iconSize} ${iconBlueClass}`} /> },
+        { name: "GitHub", icon: <SiGit className={`${iconSize} ${iconBlueClass}`} /> },
+        { name: "AWS", icon: <SiGooglecloud className={`${iconSize} ${iconBlueClass}`} /> },
+        { name: "Google Cloud", icon: <SiGooglecloud className={`${iconSize} ${iconBlueClass}`} /> },
         { name: "CI/CD", icon: <RefreshCw className={`${iconSize} ${iconBlueClass}`} /> }
       ]
     }
@@ -130,13 +129,13 @@ const SkillsSection = () => {
                   </div>
                 )}
                 <h3 className={`text-2xl font-semibold ${
-                  category.color === "blue" ? "text-[#1FB6FF]" : "text-[#FF7E36]"
-                }`}>
+                  category.color === "blue" ? "text-[#1FB6FF]" : "text-[#FF7E36]"}`
+                }>
                   {category.title}
                 </h3>
               </div>
               
-              <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-5 px-4 py-8 rounded-xl bg-gradient-to-br ${
+              <div className={`grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-5 px-4 py-8 rounded-xl bg-gradient-to-br $ {
                 category.color === "blue" 
                   ? "from-[#1FB6FF]/5 to-transparent border border-[#1FB6FF]/10" 
                   : "from-[#FF7E36]/5 to-transparent border border-[#FF7E36]/10"
@@ -152,7 +151,7 @@ const SkillsSection = () => {
                     whileHover={{ y: -8, transition: { duration: 0.2 } }}
                   >
                     <motion.div 
-                      className={`w-16 h-16 rounded-lg flex items-center justify-center mb-3 bg-white/5 backdrop-blur-sm border border-white/10 shadow-lg transform transition-all duration-300 ${
+                      className={`w-16 h-16 rounded-lg flex items-center justify-center mb-3 bg-white/5 backdrop-blur-sm border border-white/10 shadow-lg transform transition-all duration-300 $ {
                         category.color === "blue" 
                           ? "group-hover:border-[#1FB6FF]/30 group-hover:bg-[#1FB6FF]/5" 
                           : "group-hover:border-[#FF7E36]/30 group-hover:bg-[#FF7E36]/5"
@@ -164,7 +163,9 @@ const SkillsSection = () => {
                     >
                       {skill.icon}
                     </motion.div>
-                    <span className="font-medium text-sm text-center">{skill.name}</span>
+                    <span className="text-xs text-center text-white/80 group-hover:text-[#1FB6FF]/80">
+                      {skill.name}
+                    </span>
                   </motion.div>
                 ))}
               </div>

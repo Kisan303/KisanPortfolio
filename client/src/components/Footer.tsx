@@ -10,15 +10,15 @@ const Footer = () => {
       transition={{ duration: 0.8 }}
     >
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="mb-4 md:mb-0">
-            <a href="#" className="text-2xl font-bold tracking-wider">
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <div>
+            <a href="#" className="text-3xl font-bold tracking-wider text-center">
               <span className="text-gradient">KR</span>
             </a>
           </div>
           
-          <p className="text-tertiary text-center md:text-right">
-            © {new Date().getFullYear()} Kisan Rai. All rights reserved. Designed & Built with <span className="text-accent-orange">♥</span>
+          <p className="text-tertiary text-center text-lg">
+            © {new Date().getFullYear()} Kisan Rai. All rights reserved. Designed & Built with <span className="text-accent-orange">&#9742;</span>
           </p>
         </div>
       </div>

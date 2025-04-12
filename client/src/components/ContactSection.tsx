@@ -5,21 +5,21 @@ const ContactSection = () => {
   const contactItems = [
     {
       title: "Email",
-      value: "contact@kisanrai.com",
+      value: "kisanrai939@gmail.com",
       icon: <Mail className="w-8 h-8 text-accent-blue" />,
-      link: "mailto:contact@kisanrai.com"
+      link: "mailto:kisanrai939@gmail.com"
     },
     {
       title: "GitHub",
       value: "github.com/kisanrai",
       icon: <Github className="w-8 h-8 text-accent-blue" />,
-      link: "https://github.com"
+      link: "https://github.com/Kisan303"
     },
     {
       title: "LinkedIn",
       value: "linkedin.com/in/kisanrai",
       icon: <Linkedin className="w-8 h-8 text-accent-blue" />,
-      link: "https://linkedin.com"
+      link: "https://www.linkedin.com/in/kisanrai/"
     }
   ];
 

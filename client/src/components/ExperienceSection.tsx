@@ -130,33 +130,33 @@ const ExperienceSection = () => {
   const experienceData = [
     {
       id: 1,
-      title: "Senior Software Engineer",
-      company: "Fusemachines",
-      period: "2021 - Present",
+      title: "Backend Software Engineer",
+      company: "FusemachinesAI",
+      period: "2022 - 2023",
       logoIcon: Code,
       bgColor: "bg-indigo-900/30",
       textColor: "text-indigo-400",
       responsibilities: [
-        "Led the development of microservices architecture for a large-scale enterprise application, resulting in 40% improved system performance.",
-        "Implemented CI/CD pipelines and automated testing, reducing deployment time by 60% and catching 95% of bugs before production.",
-        "Mentored junior developers and conducted code reviews, maintaining high code quality standards across the team."
+        "Developed backend systems using Python/Django, improving performance by 40% and building RESTful APIs for seamless integration.",
+        "Optimized PostgreSQL queries and created dynamic views/templates with Django, boosting system speed by 84% and enhancing user experience.",
+        "Integrated Stripe payment gateway and implemented advanced search/filter functionalities, increasing user engagement by 30%."
       ],
-      technologies: ["React", "Node.js", "GraphQL", "Docker", "AWS"]
+      technologies: ["Python", "Restful APIs", "PostgresSQL", "Docker", "Stripe"]
     },
     {
       id: 2,
-      title: "Full Stack Developer",
+      title: "Android Developer",
       company: "EKbana Solutions",
       period: "2019 - 2021",
       logoIcon: Layers,
       bgColor: "bg-blue-900/30", 
       textColor: "text-blue-400",
       responsibilities: [
-        "Developed and maintained multiple client-facing applications using React and Laravel, serving over 50,000 active users.",
-        "Optimized database queries and implemented caching strategies, reducing page load times by 65%.",
-        "Collaborated closely with UX/UI designers to implement responsive, accessible interfaces across all platforms."
+        "Redesigned the frontend of the Hamrobazzar Marketplace using Android Studio IDE (Java), ensuring a consistent and user-friendly interface.",
+        "Built dynamic layouts with Material Design and integrated Google Maps API for responsive, location-based user experiences.",
+        "Integrated Firebase for real-time data synchronization by leveraging Firestore and Realtime Database, resulting in faster updates for product listings and smoother user interactions."
       ],
-      technologies: ["Laravel", "Vue.js", "MySQL", "Redis", "REST APIs"]
+      technologies: ["Java | XMl", "AndroidStudio", "Firebase", "Figma"]
     },
     {
       id: 3,
@@ -173,6 +173,7 @@ const ExperienceSection = () => {
       ],
       technologies: ["JavaScript", "React", "CSS3", "HTML5", "Webpack"]
     },
+    /*
     {
       id: 4,
       title: "Junior Web Developer",
@@ -188,6 +189,7 @@ const ExperienceSection = () => {
       ],
       technologies: ["JavaScript", "PHP", "jQuery", "Bootstrap", "WordPress"]
     }
+      */
   ];
 
   const [activeExperience, setActiveExperience] = useState(experienceData[0].id);

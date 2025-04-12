@@ -29,26 +29,19 @@ const HeroSection = () => {
     >
       {/* Parallax Background Elements */}
       <div className="parallax-bg absolute inset-0">
-        {/* Top-right gradient */}
         <div className="absolute top-0 right-0 w-2/3 h-3/4 bg-gradient-to-b from-[rgba(31,182,255,0.07)] to-transparent rounded-bl-full opacity-60 blur-xl"></div>
-        
-        {/* Bottom-left gradient */}
         <div className="absolute bottom-0 left-0 w-2/3 h-3/4 bg-gradient-to-t from-[rgba(255,126,54,0.07)] to-transparent rounded-tr-full opacity-60 blur-xl"></div>
-        
-        {/* Floating elements - subtle circles */}
         <div className="absolute top-[20%] left-[10%] w-16 h-16 rounded-full bg-[rgba(31,182,255,0.04)] blur-md animate-float-slow"></div>
         <div className="absolute top-[60%] left-[80%] w-24 h-24 rounded-full bg-[rgba(255,126,54,0.04)] blur-md animate-float-medium"></div>
         <div className="absolute top-[40%] left-[20%] w-32 h-32 rounded-full bg-[rgba(255,255,255,0.01)] blur-md animate-float-fast"></div>
-        
-        {/* Subtle grid pattern */}
-        <div className="absolute inset-0 opacity-5" 
+        <div className="absolute inset-0 opacity-5"
              style={{
                backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px)', 
                backgroundSize: '40px 40px'
              }}>
         </div>
       </div>
-      
+
       {/* Hero Content */}
       <div className="container mx-auto px-6 z-10 flex flex-col md:flex-row items-center justify-between">
         <motion.div 
@@ -113,13 +106,11 @@ const HeroSection = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 1.2 }}
         >
-          <div className="relative rounded-full w-64 h-64 md:w-80 md:h-80 overflow-hidden border-4 border-transparent"
+          <div className="relative rounded-full w-72 h-72 md:w-96 md:h-96 max-w-[400px] max-h-[400px] overflow-hidden border-4 border-transparent"
                style={{
                  background: 'linear-gradient(#121212, #121212) padding-box, linear-gradient(90deg, #1FB6FF, #FF7E36) border-box'
                }}>
-            <div 
-              className="w-full h-full rounded-full overflow-hidden"
-            >
+            <div className="w-full h-full rounded-full overflow-hidden">
               <div className="w-full h-full bg-gradient-to-tr from-[rgba(31,182,255,0.2)] to-[rgba(255,126,54,0.2)] absolute"></div>
               <div className="w-full h-full">
                 <img 
@@ -132,7 +123,7 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
-      
+
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-0 right-0 flex justify-center animate-bounce">
         <a href="#about" className="text-gray-400 hover:text-white transition-colors">

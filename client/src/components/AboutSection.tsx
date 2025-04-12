@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code, GraduationCap, Briefcase, Coffee, Heart, Lightbulb, Globe, Book, Github, Codepen } from 'lucide-react';
+import { Code, GraduationCap, Briefcase, Coffee, Heart, Lightbulb, Globe, Book, Github, Codepen, Linkedin } from 'lucide-react';
 import { useMouseGlow } from '../hooks/useMouseGlow';
 
 const BentoBox = ({ 
@@ -100,12 +100,12 @@ const AboutSection = () => {
           >
             <div className="space-y-2">
               <div>
-                <div className="font-medium">Computer Science</div>
-                <div className="text-xs text-gray-400">University of Technology</div>
+                <div className="font-medium">Post-Grad in Full-stack Software Development</div>
+                <div className="text-xs text-gray-400">Lambton College | 2025 Grad</div>
               </div>
               <div>
-                <div className="font-medium">Web Development Bootcamp</div>
-                <div className="text-xs text-gray-400">Tech Academy</div>
+                <div className="font-medium">BSc.Hons in Computer Science</div>
+                <div className="text-xs text-gray-400">University of Wolverhampton-Uk | 2021 Grad</div>
               </div>
             </div>
           </BentoBox>
@@ -118,8 +118,8 @@ const AboutSection = () => {
             color="from-orange-500/20 to-orange-500/5"
           >
             <ul className="list-disc list-inside space-y-1 text-sm">
-              <li>Senior Developer at TechCorp</li>
-              <li>Frontend Lead at StartupXYZ</li>
+              <li>Python Backend-developer | FuseMachine AI</li>
+              <li>Android | Frontend developer at Ek-Bana Solutions inch</li>
               <li>Freelance Developer</li>
             </ul>
             <div className="mt-2 text-xs text-[#1FB6FF]">See full experience section ↓</div>
@@ -135,9 +135,8 @@ const AboutSection = () => {
             <div className="flex flex-wrap gap-2">
               <span className="px-2 py-1 bg-white/5 rounded-full text-xs">Photography</span>
               <span className="px-2 py-1 bg-white/5 rounded-full text-xs">Hiking</span>
-              <span className="px-2 py-1 bg-white/5 rounded-full text-xs">Reading</span>
-              <span className="px-2 py-1 bg-white/5 rounded-full text-xs">Chess</span>
-              <span className="px-2 py-1 bg-white/5 rounded-full text-xs">Music</span>
+              <span className="px-2 py-1 bg-white/5 rounded-full text-xs">Movies</span>
+              <span className="px-2 py-1 bg-white/5 rounded-full text-xs">Unity-UnReal Game Engine</span>
             </div>
           </BentoBox>
           
@@ -157,14 +156,14 @@ const AboutSection = () => {
           
           {/* CodePen/Codepen link */}
           <BentoBox 
-            icon={Codepen} 
-            title="CodePen"
+            icon={Linkedin} 
+            title="Linkedin"
             delay={5}
             color="from-gray-700/40 to-gray-700/20"
-            href="https://codepen.io/"
+            href="https://www.linkedin.com/in/kisanrai/"
           >
             <div className="flex items-center justify-between">
-              <span>Check out my code experiments</span>
+              <span>Check out my Linkedln Profile</span>
               <span className="text-xl">→</span>
             </div>
           </BentoBox>
@@ -177,7 +176,7 @@ const AboutSection = () => {
           >
             <div className="flex gap-4 items-center">
               <Lightbulb className="h-10 w-10 text-[#1FB6FF] shrink-0" />
-              <blockquote className="italic text-lg">
+              <blockquote className="text-lg">
                 "I believe in writing clean, maintainable code that stands the test of time and creates meaningful experiences for users."
               </blockquote>
             </div>
