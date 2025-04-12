@@ -622,6 +622,8 @@ import themePlugin from "@replit/vite-plugin-shadcn-theme-json";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 var vite_config_default = defineConfig({
+  base: "/KisanPortfolio/",
+  // 👈 IMPORTANT LINE
   plugins: [
     react(),
     runtimeErrorOverlay(),
