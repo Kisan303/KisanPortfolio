@@ -29,8 +29,24 @@ const HeroSection = () => {
     >
       {/* Parallax Background Elements */}
       <div className="parallax-bg absolute inset-0">
-        <div className="absolute top-0 right-0 w-2/3 h-3/4 bg-gradient-to-b from-[rgba(31,182,255,0.05)] to-transparent rounded-bl-full opacity-40"></div>
-        <div className="absolute bottom-0 left-0 w-2/3 h-3/4 bg-gradient-to-t from-[rgba(255,126,54,0.05)] to-transparent rounded-tr-full opacity-40"></div>
+        {/* Top-right gradient */}
+        <div className="absolute top-0 right-0 w-2/3 h-3/4 bg-gradient-to-b from-[rgba(31,182,255,0.07)] to-transparent rounded-bl-full opacity-60 blur-xl"></div>
+        
+        {/* Bottom-left gradient */}
+        <div className="absolute bottom-0 left-0 w-2/3 h-3/4 bg-gradient-to-t from-[rgba(255,126,54,0.07)] to-transparent rounded-tr-full opacity-60 blur-xl"></div>
+        
+        {/* Floating elements - subtle circles */}
+        <div className="absolute top-[20%] left-[10%] w-16 h-16 rounded-full bg-[rgba(31,182,255,0.04)] blur-md animate-float-slow"></div>
+        <div className="absolute top-[60%] left-[80%] w-24 h-24 rounded-full bg-[rgba(255,126,54,0.04)] blur-md animate-float-medium"></div>
+        <div className="absolute top-[40%] left-[20%] w-32 h-32 rounded-full bg-[rgba(255,255,255,0.01)] blur-md animate-float-fast"></div>
+        
+        {/* Subtle grid pattern */}
+        <div className="absolute inset-0 opacity-5" 
+             style={{
+               backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px)', 
+               backgroundSize: '40px 40px'
+             }}>
+        </div>
       </div>
       
       {/* Hero Content */}
@@ -105,10 +121,12 @@ const HeroSection = () => {
               className="w-full h-full rounded-full overflow-hidden"
             >
               <div className="w-full h-full bg-gradient-to-tr from-[rgba(31,182,255,0.2)] to-[rgba(255,126,54,0.2)] absolute"></div>
-              <svg width="100%" height="100%" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="100" cy="75" r="50" fill="#333" />
-                <circle cx="100" cy="260" r="140" fill="#333" />
-              </svg>
+              <div className="w-full h-full flex items-center justify-center bg-[#1A1A1A]">
+                {/* Placeholder profile image */}
+                <div className="w-4/5 h-4/5 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
+                  <span className="text-4xl font-bold text-gray-400">KR</span>
+                </div>
+              </div>
             </div>
           </div>
         </motion.div>
