@@ -21,10 +21,10 @@ import {
   type ChatbotResponse,
   type InsertChatbotResponse
 } from "@shared/schema";
-import session from "express-session";
+import * as ExpressSession from "express-session";
 import createMemoryStore from "memorystore";
 
-const MemoryStore = createMemoryStore(session);
+const MemoryStore = createMemoryStore(ExpressSession);
 
 export interface IStorage {
   // User authentication
@@ -73,7 +73,7 @@ export interface IStorage {
   deleteChatbotResponse(id: number): Promise<boolean>;
   
   // Session store
-  sessionStore: session.SessionStore;
+  sessionStore: ExpressSession.Store;
 }
 
 export class MemStorage implements IStorage {
