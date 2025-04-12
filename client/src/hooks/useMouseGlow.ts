@@ -1,21 +1,36 @@
 import { useRef, useEffect } from 'react';
 
 export const useMouseGlow = () => {
-  const glowRef = useRef<HTMLDivElement>(null);
+  const elementRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
+    const element = elementRef.current;
+    if (!element) return;
+    
     const handleMouseMove = (e: MouseEvent) => {
-      const glow = glowRef.current;
-      if (!glow) return;
+      const rect = element.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
       
-      const { clientX, clientY } = e;
-      glow.style.left = `${clientX}px`;
-      glow.style.top = `${clientY}px`;
+      if (x > 0 && x < rect.width && y > 0 && y < rect.height) {
+        element.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 20%, transparent 60%)`;
+      } else {
+        element.style.background = '';
+      }
     };
     
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    element.addEventListener('mousemove', handleMouseMove);
+    element.addEventListener('mouseleave', () => {
+      element.style.background = '';
+    });
+    
+    return () => {
+      element.removeEventListener('mousemove', handleMouseMove);
+      element.removeEventListener('mouseleave', () => {
+        element.style.background = '';
+      });
+    };
   }, []);
   
-  return { glowRef };
+  return elementRef;
 };
