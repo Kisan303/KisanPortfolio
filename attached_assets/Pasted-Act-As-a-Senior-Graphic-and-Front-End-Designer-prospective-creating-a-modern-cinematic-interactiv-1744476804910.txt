@@ -1,0 +1,106 @@
+Act As a Senior Graphic and Front-End Designer prospective, creating a modern, cinematic, interactive portfolio website for Kisan Rai — a Full-Stack Software Developer — that’s built with a focus on fluid, clean animations, parallax-driven transitions, and minimalistic, pixel-perfect design.
+
+The goal is to deliver a highly engaging, visually rich experience that not only reflects Kisan’s technical skillset but also his creative and problem-solving mindset through thoughtful visual storytelling.
+
+🎬 Core Design & Motion Principles
+Cinematic Typography: Use a clean, bold, and modern sans-serif font family (like Satoshi, Poppins, or Space Grotesk) with variable weights to establish a strong visual hierarchy. Hero titles will be large, letter-spaced, and animate smoothly into view.
+
+Minimalistic Layout: The entire design will lean into simplicity and precision, with carefully balanced negative space, avoiding clutter while prioritizing clarity and elegance.
+
+Fluid Animations:
+
+Smooth text fade-ins, image transitions, and icon animations
+
+Subtle hover micro-interactions (like scaling, glowing, or soft motion shifts)
+
+Section dividers and transitions that glide naturally through scroll events
+
+🖥️ Interactive Features
+Parallax-Driven Hero Landing Page:
+
+A circular profile image (with soft shadows or animated borders)
+
+Animated hero text with Kisan’s name, title, and a brief intro quote
+
+Multi-layered parallax effects where background, title, and image move at different speeds to create a cinematic depth effect
+
+Subtle moving elements like gradients, shapes, or particles for added richness
+
+Parallel Scroll Navigation:
+
+Smooth horizontal/vertical scroll transitions between sections
+
+Parallax effects woven throughout the page navigation, providing a visually dynamic experience when shifting from one content block to another
+
+Iconography:
+
+Clean, vector-based icons (using libraries like Lucide or Heroicons) for navigation, contact, and project links
+
+Simple, bold icons that smoothly animate on hover and click
+
+📑 Content Prioritization
+We’ll refine the portfolio to focus only on the most essential, impactful information:
+
+Hero Section
+
+Name: Kisan Rai
+
+Title: Full Stack Software Developer
+
+Quote: "I'm passionate about creating seamless user experiences and solving real-world problems through technology."
+
+Profile Image (circular, interactive, parallax-enabled)
+
+About Section
+
+Short personal summary about Kisan’s mindset and approach to development, animated with smooth fade/slide effects
+
+Experience Section
+
+Brief highlights of two key roles (Fusemachines & EKbana Solutions) with animated cards or expandable text blocks
+
+Focus on impactful stats and contributions only
+
+Projects Section
+
+Three key project cards animated with hover effects and GitHub icons for live code links
+
+Clean, visual layout with titles, technologies, and descriptions
+
+Cards move or shift slightly with parallax as you scroll
+
+Skills Section
+
+Grid-style layout of technical skills, frameworks, and tools
+
+Icons and brief labels, animated on reveal
+
+Contact Section
+
+Vector icons for Email, GitHub, and LinkedIn
+
+Subtle motion-based entry animations and hover states
+
+🎨 Visual Style & Colors
+Primary Theme: Dark background (charcoal/jet black) with soft white text for sharp contrast
+
+Accent Colors: Warm orange (#FF7E36) or electric blue (#1FB6FF) for hover effects and highlights
+
+Typography: White for headings, muted whites for subheadings, and soft gray for body text
+
+Accessible color contrast and visual clarity maintained
+
+✅ Deliverables
+Fully responsive, interactive portfolio website
+
+Custom parallax and scroll animations
+
+Cinematic font integration and iconography
+
+Optimized content hierarchy
+
+GitHub project links only
+
+Circular, interactive profile image with parallax behavior
+
+Consistent, modern, minimalistic UI with pixel-perfect layout
