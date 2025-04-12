@@ -121,11 +121,12 @@ const HeroSection = () => {
               className="w-full h-full rounded-full overflow-hidden"
             >
               <div className="w-full h-full bg-gradient-to-tr from-[rgba(31,182,255,0.2)] to-[rgba(255,126,54,0.2)] absolute"></div>
-              <div className="w-full h-full flex items-center justify-center bg-[#1A1A1A]">
-                {/* Placeholder profile image */}
-                <div className="w-4/5 h-4/5 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                  <span className="text-4xl font-bold text-gray-400">KR</span>
-                </div>
+              <div className="w-full h-full">
+                <img 
+                  src="/profile.jpg" 
+                  alt="Profile" 
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
           </div>
