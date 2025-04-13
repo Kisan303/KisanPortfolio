@@ -4,7 +4,9 @@ import themePlugin from "@replit/vite-plugin-shadcn-theme-json";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 
+// Vite config for building and deploying to GitHub Pages
 export default defineConfig({
+  base: "/KisanPortfolio/",  // Ensures GitHub Pages works under this subpath
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -12,9 +14,7 @@ export default defineConfig({
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
-          await import("@replit/vite-plugin-cartographer").then((m) =>
-            m.cartographer(),
-          ),
+          require("@replit/vite-plugin-cartographer").cartographer(),
         ]
       : []),
   ],
@@ -27,7 +27,7 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
-    emptyOutDir: true,
+    outDir: path.resolve(import.meta.dirname, "dist/public"),  // Frontend output folder
+    emptyOutDir: true,  // Ensures that the output directory is cleared before build
   },
 });
